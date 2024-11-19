@@ -1,0 +1,28 @@
+###
+
+GET http://localhost:3000/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzMyMDE2NTM4fQ.Fa5Z8dAo3b4pHgzXHWFII_pcSSJbonRQ1xroUCWjrJs
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"rahul",
+    "username":"rahul123",
+    "password": "rahul@456",
+    "gender": "Male",
+    "location":"hyderabad"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"rahul123",
+    "password": "rahul@456"
+}
